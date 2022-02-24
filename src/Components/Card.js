@@ -5,7 +5,7 @@ import Ray from "../Assets/mountain-bike 1.png";
 
 function Card() {
   return (
-    <div className="ml-12 py-8 my-16 relative overflow-x-auto rounded-lg flex flex-nowrap items-center h-auto w-auto pop">
+    <div className="ml-12 py-8 my-8 relative overflow-x-auto rounded-lg flex flex-nowrap items-center h-auto w-auto pop">
     <div className="sticky float-left"></div>
       <div className="h-auto w-72 rounded-2xl hover:shadow-lg cursor-pointer mr-8 flex flex-shrink-0 flex-col">
         <div className="relative">
