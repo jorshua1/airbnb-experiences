@@ -2,8 +2,15 @@
 import Navbar from "./Components/Navbar.js";
 import Hero from "./Components/Hero";
 import Cards from "./Components/Cards";
+import Joke from "./Components/Joke.js";
+import jokesData from "./data/jokesData.js";
 
 function App() {
+
+  const jokesElements = jokesData.map(joke =>{
+    return <Joke setup={joke.setup} punch={joke.punch} />
+  })
+
   return (
     <div className="">
       {/* <Container />
@@ -19,9 +26,10 @@ function App() {
         setup="why don't pirates travel the mountains roads"
         punch="Scurvy"
       /> */}
-      <Navbar />
-      <Hero />
-      <Cards />
+      {jokesElements}
+      {/* <Navbar /> */}
+      {/* <Hero /> */}
+      {/* <Cards /> */}
     </div>
   );
 }
