@@ -1,14 +1,16 @@
 // import './App.css';
 import Navbar from "./Components/Navbar.js";
-import Hero from "./Components/Hero"
-import Card from './Components/Card'
+import Hero from "./Components/Hero";
+import Cards from "./Components/Cards";
 
 function App() {
   return (
-    <div className="">
+    <div>
+      {/* {jokesElements} */}
       <Navbar />
-      <Hero/>
-      <Card />
+      <Hero />
+      <Cards />
+
     </div>
   );
 }

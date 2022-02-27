@@ -1,10 +1,10 @@
 import React from 'react';
-import Logo from '../Assets/logo.svg'
+// import Logo from '../Assets/logo.svg'
 
 function Navbar() {
 	return(
 		<nav className="md:h-24 h-16 flex items-center shadow-md">
-			<img src={Logo} alt="logo Airbnb" className='md:w-32 w-28 mx-12'/>
+			<img src={process.env.PUBLIC_URL + '/Assets/logo.svg'} alt="logo Airbnb" className='md:w-32 w-28 mx-12'/>
 		</nav>
 	)
 }
