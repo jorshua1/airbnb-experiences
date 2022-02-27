@@ -1,22 +1,11 @@
 import React from "react";
-import Katie from "../Assets/image 12.png";
-import Mary from "../Assets/wedding-photography 1.png";
-import Ray from "../Assets/mountain-bike 1.png";
 
 function Card(props) {
   return (
     <div className="h-auto w-72 rounded-2xl hover:shadow-lg cursor-pointer mr-8 flex flex-shrink-0 flex-col">
       <div className="relative">
         <img
-          src={
-            props.imagen === "katie"
-              ? Katie
-              : props.imagen === "mary"
-              ? Mary
-              : props.imagen === "ray"
-              ? Ray
-              : "not found"
-          }
+          src={props.imagen}
           alt="Nadadora reconocida"
           className="h-96 relative text-center"
         />
