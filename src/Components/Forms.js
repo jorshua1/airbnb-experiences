@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SelectInput from "./Form-Components/Select-input";
+import DoubleInput from "./Form-Components/DoubleInput";
 
 export default function Form() {
   const [valor, setValor] = useState("");
@@ -39,6 +40,8 @@ export default function Form() {
       <>
         <SelectInput></SelectInput>
       </>
+      <br />
+      <DoubleInput></DoubleInput>
     </>
   );
 }
