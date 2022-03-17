@@ -1,23 +1,18 @@
 // import './App.css';
-import Navbar from "./Components/Navbar.js";
-import Hero from "./Components/Hero";
-import Cards from "./Components/Cards";
-import Joke from "./Components/Joke.js";
-import jokesData from "./data/jokesData.js";
-import Messages from "./Components/Messages.js";
+import Forms from "./Components/Forms.js";
 
 function App() {
-/*   const jokesElements = jokesData.map((joke) => {
+  /*   const jokesElements = jokesData.map((joke) => {
     return <Joke key={joke.id} setup={joke.setup} punchline={joke.punchline} />;
   });
 
   return <div className="">{jokesElements}</div>; */
 
-  return(
-    <div>
-      <Messages></Messages>
+  return (
+    <div className="bg-zinc-900 h-screen text-white">
+      <Forms />
     </div>
-  )
+  );
 }
 
 export default App;
