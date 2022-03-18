@@ -1,5 +1,6 @@
 // import './App.css';
-import Forms from "./Components/Forms.js";
+// import Forms from "./Components/Forms.js";
+import NewForm from "./Components/NewForm";
 
 function App() {
   /*   const jokesElements = jokesData.map((joke) => {
@@ -9,8 +10,9 @@ function App() {
   return <div className="">{jokesElements}</div>; */
 
   return (
-    <div className="bg-zinc-900 h-screen text-white">
-      <Forms />
+    <div className="bg-zinc-900 text-white">
+      <NewForm />
+
     </div>
   );
 }
