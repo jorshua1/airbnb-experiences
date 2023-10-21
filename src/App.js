@@ -1,16 +1,11 @@
 // import './App.css';
-import Navbar from "./Components/Navbar.js";
-import Hero from "./Components/Hero";
-import Cards from "./Components/Cards";
+import { ExperiencesPage } from "./Components/ExperiencesPage";
 
 function App() {
   return (
     <div>
       {/* {jokesElements} */}
-      <Navbar />
-      <Hero />
-      <Cards />
-
+      <ExperiencesPage />
     </div>
   );
 }

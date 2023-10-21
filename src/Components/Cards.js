@@ -6,13 +6,15 @@ function Cards() {
   const cardComponents = cardsData.map((card) => {
     return (
       <Card
-        imagen={card.imagen}
-        estado={card.estado}
-        reseñas={card.reseñas}
-        pais={card.pais}
-        titulo={card.titulo}
-        precio={card.precio}
-        grupo={card.grupo}
+        key={card.id}
+        card={card}
+        // imagen={card.imagen}
+        // estado={card.estado}
+        // reseñas={card.reseñas}
+        // pais={card.pais}
+        // titulo={card.titulo}
+        // precio={card.precio}
+        // grupo={card.grupo}
       />
     );
   });
@@ -20,7 +22,7 @@ function Cards() {
   return (
     <div className="ml-12 py-8 my-8 relative overflow-x-auto rounded-lg flex flex-nowrap items-center h-auto w-auto pop">
       <div className="sticky float-left"></div>
-      {cardComponents}      
+      {cardComponents}
     </div>
   );
 }
